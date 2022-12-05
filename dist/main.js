@@ -1,0 +1,2 @@
+/*! For license information please see main.js.LICENSE.txt */
+window.addEventListener("DOMContentLoaded",(e=>{document.body.querySelector("#sideNav")&&new bootstrap.ScrollSpy(document.body,{target:"#sideNav",offset:74});const o=document.body.querySelector(".navbar-toggler");[].slice.call(document.querySelectorAll("#navbarResponsive .nav-link")).map((function(e){e.addEventListener("click",(()=>{"none"!==window.getComputedStyle(o).display&&o.click()}))}))}));
