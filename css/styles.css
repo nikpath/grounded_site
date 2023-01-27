@@ -107,6 +107,13 @@ hr {
   border: 0;
   opacity: 0.25;
 }
+.hr-visible {
+  margin: 1rem 0;
+  color: #d6e577;
+  background-color: currentColor;
+  border: 0;
+  opacity: 1;
+}
 
 hr:not([size]) {
   height: 1px;
@@ -190,7 +197,7 @@ h6,
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  white-space: normal;
 }
 
 abbr[title],
@@ -653,6 +660,7 @@ progress {
 
 .figure {
   display: inline-block;
+  margin: 0 0 1rem;
 }
 
 .figure-img {
@@ -723,10 +731,10 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
-  flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-bottom: 2rem;
 }
 .row > * {
   flex-shrink: 0;
@@ -738,11 +746,11 @@ progress {
 }
 
 .col {
-  flex: 1 0 0%;
+  flex: 1;
 }
 
 .row-cols-auto > * {
-  flex: 0 0 auto;
+  flex: 0 1 auto;
   width: auto;
 }
 
@@ -752,8 +760,9 @@ progress {
 }
 
 .row-cols-2 > * {
-  flex: 0 0 auto;
-  width: 50%;
+  flex: 0 1 auto;
+  width: 100%;
+  align-items: center;
 }
 
 .row-cols-3 > * {
@@ -793,7 +802,7 @@ progress {
 
 .col-3 {
   flex: 0 0 auto;
-  width: 25%;
+  width: 100%;
 }
 
 .col-4 {
@@ -3758,6 +3767,14 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+  border-color: #d6e577;
+  background: #e5ecb5;
+}
+
+.next-blog-btn {
+  max-width: fit-content;
+  position: relative;
+  left: 80%;
 }
 
 .btn-sm,
@@ -8049,6 +8066,7 @@ fieldset:disabled .btn {
 
 .text-decoration-underline {
   text-decoration: underline !important;
+  text-decoration-color: #d6e577 !important;
 }
 
 .text-decoration-line-through {
@@ -11791,16 +11809,17 @@ p.lead {
   font-size: 3rem;
 }
 
-section.resume-section {
+section.main-section {
   display: flex;
   align-items: center;
+  position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
 }
-section.resume-section .resume-section-content {
+section.main-section .main-section-content {
   width: 100%;
 }
 
@@ -11812,12 +11831,12 @@ section.resume-section .resume-section-content {
 }
 
 @media (min-width: 768px) {
-  section.resume-section {
+  section.main-section {
     min-height: 100vh;
   }
 }
 @media (min-width: 992px) {
-  section.resume-section {
+  section.main-section {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
@@ -11825,26 +11844,68 @@ section.resume-section .resume-section-content {
   }
 }
 
-.team-pictures-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  margin-top: 3rem;
-}
-
-.team-profile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-profile {
-  max-width: 10rem;
-  max-height: 10rem;
-  border: 0.5rem solid rgba(255, 255, 255, 0.2);
-}
-
 .img-prototype {
   max-width: 50%;
   height: auto;
+}
+
+.img-icon {
+  width: 65px;
+}
+
+.img-gen {
+  max-width: 70%;
+  height: 50%;
+  margin-left: 15%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  left: 97%;
+  position: inherit;
+  font-size: 28px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-img-container {
+  display: block;
+  text-align: center;
+}
+
+.main-idea-bg {
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  border: 20px solid #d6e577;
+  max-width: 80%;
 }

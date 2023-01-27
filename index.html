@@ -61,17 +61,20 @@
             <a class="nav-link js-scroll-trigger" href="#about">Grounded</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#inspiration"
-              >Our Inspiration</a
+            <a class="nav-link js-scroll-trigger" href="#goal"
+              >The Goal</a
             >
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#solution"
-              >Our Solution</a
+              >The Solution</a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Our Team</a>
+            <a class="nav-link js-scroll-trigger" href="#team">The Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#blog">Build Blog</a>
           </li>
         </ul>
       </div>
@@ -79,8 +82,8 @@
     <!-- Page Content-->
     <div class="container-fluid p-0">
       <!-- About-->
-      <section class="resume-section" id="about">
-        <div class="resume-section-content intro-page">
+      <section class="main-section" id="about">
+        <div class="main-section-content intro-page">
           <div>
             <h1 class="mb-0">
               GROUNDED
@@ -96,110 +99,213 @@
         </div>
       </section>
       <hr class="m-0" />
-      <!-- Inspiration-->
-      <section class="resume-section" id="inspiration">
-        <div class="resume-section-content">
-          <h2 class="mb-3">Our Inspiration</h2>
-          <div
-            class="d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
+      <!-- GOAL -->
+      <section class="main-section" id="goal">
+        <div class="main-section-content row row-cols-2">
+          <div>
+          <h2 class="mb-3">What's the Problem?</h2>
             <div class="flex-grow-1">
-              <h3 class="mb-2">Stress</h3>
               <p class="mb-5">
-                33% of people experience brief periods of high stress everyday. At
-                work, school, or at home. With long wait times and expensive
-                fees, long-term professional care is inaccessible to many. In a
-                survey we conducted, 41% of people said they are unaware when
-                they are experiencing a period of high stress or are about to
-                have an anxiety attack. People also hesitate to reach out for
-                help due to stigma and self-consciousness.
+              33% of people experience brief periods of high stress everyday. At work, school, or at home. 
+              This can manifest as hyperventilating, sweating, negative and racing thoughts, and restlessness. 
+              With long wait times and expensive fees, long-term professional care is inaccessible to many. 
+              In a survey we conducted, 41% of people said they are unaware when they are experiencing a 
+              period of high stress or are about to have an anxiety attack. People also hesitate to reach
+              out for help due to stigma and self-consciousness.
               </p>
-              <div class="subheading mb-3">
-                We want to provide people with a way to manage their everyday
-                stress while waiting to access professional care.
               </div>
-            </div>
-            <!--<div class="flex-shrink-0">
-              <span class="text-primary">March 2013 - Present</span>
-            </div> -->
+              </div>
+              <di class="main-idea-bg">
+                <p class="subheading mb-3" style="text-align:center;">WE WANT TO PROVIDE PEOPLE WITH A WAY TO COMFORTABLY AND DISCRETELY MANAGE THEIR EVERYDAY STRESS WHILE WAITING TO ACCESS PROFESSIONAL CARE.</p>
+              </div>
           </div>
         </div>
       </section>
       <hr class="m-0" />
       <!-- Design -->
-      <section class="resume-section" id="solution">
-        <div class="resume-section-content">
-          <h2 class="mb-3">Our solution</h2>
-          <h3 class="mb-2">Recognition and Relief</h3>
+      <section class="main-section" id="solution">
+        <div class="main-section-content">
+          <h2 class="mb-3">How do we fix it?</h2>
             <div class="flex-grow-1">
               <p class="mb-5">
-                Our product is a discrete solution that auto-detects high stress
-                levels in your body by monitoring your biometric data. The
-                device sends you a notification to choose a calming method from
-                breathing exercises, meditation instructions and a tactile BLS
-                method. In these times of high stress, you are prompted to take
-                a moment and ground yourself.
+                The Grounded device consists of two wearables, made to be discreet and comfortable, that go on your feet. The device measures stress using biometric sensors, then prompts the user to use grounding techniques to help them calm down. It collects information such as heart rate and galvanic skin response and uses an ML model to predict if the user is stressed. Then, the device will notify them to use the app's guided breathing exercises, muscle relaxation techniques, and/or mindfulness activities. By connecting to the Grounded App, the user can monitor their biometric data in real-time and access the guided relaxation techniques.
               </p>
+            </div>
+            <div class="row row-cols-3">
+              <span>
+            <button class="btn-lg" id="measuringBtn">Measuring Stress</button>
+            <div id="measuringModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Measuring Stress</h3>
+                <hr class="hr-visible"/>
+                <div class="col col-3">
+                <div class="row">
+                  <img
+                  class="img-icon"
+                  src="assets/img/heart.png"
+                  alt="..."
+                  />
+                  <div style="vertical-align:middle; flex-shrink:1;">
+                  <p>When a person is stressed, their heart rate increases. We use a pulse sensor to measure the BPM and inter-beat interval.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <img
+                  class="img-icon"
+                  src="assets/img/skin.png"
+                  alt="..."
+                  />
+                  <div style="vertical-align:middle; flex-shrink: 1;">
+                  <p>A change in emotional state can be measured by the galvanic skin response using an EDA sensor.</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <img
+                  class="img-icon"
+                  src="assets/img/ml.png"
+                  alt="..."
+                  />
+                  <div style="vertical-align:middle; flex-shrink:1;">
+                    <p>A machine learning model predicts whether the user is experiencing high or low stress.</p>          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </span>
+            <span>
+            <button class="btn-lg" id="mitigatingBtn">Mitigating Stress</button>
+            <div id="mitigatingModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Mitigating Stress</h3>
+                <hr class="hr-visible"/>
+                <p>We offer users two techniques to help them calm down when experiencing high stress:</p>
+                <h5>1. Breathing visualizer</h5>
+                <p>On the app, you can follow a visualizer that guides your breathing to slow down.</p>
+                <h5>2. Bi-lateral Stimulation</h5>
+                <p>BLS stands for Bi-Lateral Stimulation, which is a technique that uses tapping or vibrations on both sides of the body in a back-and-forth pattern. 
+                  <a href="https://www.evolutionsbh.com/articles/how-bilateral-stimulation-can-help-you-feel-better/">Research</a> has found that this can help lower heart rate in a short amount of time, usually within 30 seconds to two minutes.</p>
+              </div>
+            </div>
+            </span>
+            <span>
+            <button class="btn-lg" id="designingBtn">Designing for comfort</button>
+            <div id="designingModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Designing for comfort</h3>
+                <hr class="hr-visible"/>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                  <img
+                  class="img-fluid"
+                  src="assets/img/design.jpg"
+                  alt="..."
+                  />
+                  </div>
+                <p>To develop our device, we started with gathering user feedback to design the most comfortable and discreet wearable. Many users identified that having an unobtrusive solution was a priority. The wearable is a sock that fits comfortably inside your shoe, making it completely invisible.</p>
+                </span>
+              </div>
+            </div>
+            </span>
             </div>
           </div>
         </div>
       </section>
       <hr class="m-0" />
-      <!-- Team -->
-      <section class="resume-section" id="team">
-        <div class="resume-section-content">
-          <h2 class="mb-3">Our Team</h2>
-          <div class="subheading mb-2">We are a team of Mechatronic Engineering students, feel free to reach out!</div>
-          <div class="team-pictures-container">
-            <span class="team-profile"
-            ><img
-              class="img-fluid img-profile"
-              src="assets/img/sakshi_profile.jpeg"
-              alt="..."
-          />
-          <div class="subheading mb-0">Sakshi</div>
-          <ul class="mb-0">
-            <li>PM</li>
-            <li>Mechanical</li>
-          </ul>
-        </span>
-          <span class="team-profile"
-            ><img
-              class="img-fluid img-profile"
-              src="assets/img/thea_profile.jpeg"
-              alt="..."
-          />
-          <div class="subheading mb-0">Thea</div>
-          <ul class="mb-0">
-            <li>Controls</li>
-            <li>Data</li>
-          </ul>
-        </span>
-          <span class="team-profile"
-            ><img
-              class="img-fluid img-profile"
-              src="assets/img/sana_profile.png"
-              alt="..."
-          />
-          <div class="subheading mb-0">Sana</div>
-          <ul class="mb-0">
-            <li>Electrical</li>
-            <li>Hardware</li>
-          </ul>
-        </span>
-          <span class="team-profile"
-            ><img
-              class="img-fluid img-profile"
-              src="assets/img/niki_profile.JPG"
-              alt="..."
-          />
-          <div class="subheading mb-0">Niki</div>
-          <ul class="mb-0">
-            <li>Purchaser</li>
-            <li>Software</li>
-          </ul>
-        </span>
+      <!-- Blog -->
+      <section class="main-section" id="blog">
+        <div class="main-section-content">
+          <h2 class="mb-3">Our Progress So Far</h2>
+          <p>Here we'll be giving weekly updates on how the build for our prototype is going. Check back here for updates!</p>
+           <span>
+            <button class="btn-lg" id="jan22BlogBtn">Week of Jan 22nd</button>
+            <div id="jan22BlogModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Week of Jan 22nd</h3>
+                <h4>What we accomplished</h4>
+                <hr class="hr-visible"/>
+                <span class="row"><img
+                  class="img-icon"
+                  src="assets/img/mechanical.png"
+                  alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Mechanical</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                  <img
+                  class="img-fluid"
+                  src="assets/img/jan_22_mech.jpeg"
+                  alt="..."
+                  />
+                  </div>
+                  <p>For the physical design we are using a polyester-based sock (heat resistant and nonconductive material) as our base of the design and have a cut for the pulse sensor as well as the GSR sensor electrodes. The top strap (containing the electrical components) is removable and attached with Velcro to allow for the rest of the design to be washed. A rough prototype of the design has been made for both feet.</p>
+                </span>
+                <span class="row"><img
+                  class="img-icon"
+                  src="assets/img/electrical.png"
+                  alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Electrical</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <p>To minimize on space we've designed a PCB for our main circuit. This week we ordered the surface mount electronic components and have started testing the circuit with simple wiring to ensure everything works.</p>
+                  <div class="blog-img-container">
+                  <img
+                  class="img-fluid"
+                  src="assets/img/electrical_jan_22_pic.png"
+                  alt="..."
+                  />
+                  </div>
+                </span>
+                <span class="row"><img
+                  class="img-icon"
+                  src="assets/img/software.png"
+                  alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Software</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                  <img
+                  class="img-fluid"
+                  src="assets/img/software_jan_22.png"
+                  alt="..."
+                  />
+                  </div>
+                <p>This week, we focused on connecting the main device via BLE (high-speed bluetooth) technology to the smartphone app. We were successful in polling and sending the sensor data to be displayed and stored on the app. We also built the stress prediction code by deploying and incorporating the previously trained ML model and building the data pipeline taking json file as input. We are now working on setting up the flask API for transmission of sensor data from the app to the stress prediction code. We were successful in sending the prediction results to the API.</p>
+                </span>
+                <h4>Next steps</h4>
+                <hr class="hr-visible"/>
+                <p>Here's what we're working on for next week: </p>
+                <ul class="a">
+                  <li>Finish designing both PCBs and place an order for all remaining components.</li>
+                  <li>Modify the design to accommodate for the GSR sensors and ensure they are a tight fit in the design for sensor accuracy as well as working on finalizing connection of electrical components into the design.</li>
+                  <li>Continue working on the API to import data from the client.</li>
+                  <li>Find an optimal way to store the sensor data on the app and send it to the Flask backend for the prediction model.</li>
+                  <li>Start working on the controller code for the vibration motors.</li>
+                </ul>
+                <button class="btn-lg next-blog-btn" id="jan22BlogBtn">Next week >></button>
+              </div>
+            </div>
+            </span>
         </div>
+      </section>
+      <hr class="m-0" />
+      <!-- Team -->
+      <section class="main-section" id="team">
+        <div class="main-section-content">
+          <h2 class="mb-3">Meet the Team!</h2>
+          <div class="subheading mb-2" style="vertical-align:middle;">We are a team of Mechatronics Engineering students, feel free to <a href="mailto:a9pathak@uwaterloo.ca">reach out!</a></div>
+          <img
+              class="img-gen"
+              src="assets/img/team_photo.jpg"
+              alt="..."
+          />
         </div>
       </section>
       <hr class="m-0" />
