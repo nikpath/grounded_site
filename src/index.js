@@ -35,12 +35,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
   var mitigatingModal = document.getElementById("mitigatingModal");
   var designingModal = document.getElementById("designingModal");
   var jan22BlogModal = document.getElementById("jan22BlogModal");
+  var feb6BlogModal = document.getElementById("feb6BlogModal");
 
   // Get the button that opens the modal
   var measuringbtn = document.getElementById("measuringBtn");
   var mitigatingbtn = document.getElementById("mitigatingBtn");
   var designingbtn = document.getElementById("designingBtn");
   var jan22BlogBtn = document.getElementById("jan22BlogBtn");
+  var feb6BlogBtn = document.getElementById("feb6BlogBtn");
+  var nextWeekFeb6Btn = document.getElementById("nextWeekFeb6Btn");
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close");
@@ -62,6 +65,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
     jan22BlogModal.style.display = "block";
   };
 
+  feb6BlogBtn.onclick = function () {
+    feb6BlogModal.style.display = "block";
+  };
+
+  nextWeekFeb6Btn.onclick = function () {
+    feb6BlogModal.style.display = "block";
+    jan22BlogModal.style.display = "none";
+  };
+
   // When the user clicks on <span> (x), close the modal
   span[0].onclick = function () {
     measuringModal.style.display = "none";
@@ -79,17 +91,24 @@ window.addEventListener("DOMContentLoaded", (event) => {
     jan22BlogModal.style.display = "none";
   };
 
+  span[4].onclick = function () {
+    feb6BlogModal.style.display = "none";
+  };
+
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function (event) {
     if (
       event.target == measuringModal ||
       event.target == mitigatingModal ||
-      event.target == designingModal
+      event.target == designingModal ||
+      event.target == jan22BlogModal ||
+      event.target == feb6BlogModal
     ) {
       measuringModal.style.display = "none";
       mitigatingModal.style.display = "none";
       designingModal.style.display = "none";
       jan22BlogModal.style.display = "none";
+      feb6BlogModal.style.display = "none";
     }
   };
 });
