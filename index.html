@@ -352,16 +352,80 @@
                 </span>
                 <h4>Next steps</h4>
                 <hr class="hr-visible"/>
-                <p>Here's what we're working on for next week: </p>
+                <p>Here's what we're working on this week: </p>
                 <ul class="a">
                   <li>Order parts, assemble and test the PCB.</li>
                   <li>More design iterations for the physical design to find an optimal, comfortable fit for all the sensors and components.</li>
                   <li>Calibrate pulse and skin conductance sensor to get accurate results.</li>
                   <li>Finish setting up API calls and have the prediction results updated at regular intervals.</li>
                 </ul>
-                <button class="btn-lg next-blog-btn" id="nextWeek">Next week >></button>
+                <button class="btn-lg next-blog-btn" id="nextWeekFeb12Btn">Next week >></button>
               </div>
             </div>
+            <button class="btn-lg" id="feb12BlogBtn">Week of Feb 12th</button>
+            <div id="feb12BlogModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Week of Feb 12th</h3>
+                <h4>What we accomplished last week</h4>
+                <hr class="hr-visible"/>
+                <span class="row"><img
+                  class="img-icon"
+                  src="assets/img/mechanical.png"
+                  alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Mechanical</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                  <img
+                  class="img-fluid"
+                  src="assets/img/feb_12_mech.png"
+                  alt="..."
+                  />
+                  </div>
+                  <p>Black elastic and Velcro was added as needed to the design to allow for secure fit of the sensors and accommodation to any foot size. Velcro was added to the electronics strap to allow for electrical component attachment to physical design. The CAD was also modified to reflect the design changes.</p>
+                </span>
+                <span class="row"><img
+                  class="img-icon"
+                  src="assets/img/electrical.png"
+                  alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Electrical</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <p>Ordered and waiting for parts to arrive. Assisting with sensor calibration and mechanical design in the meantime.</p>
+                  <div class="blog-img-container">
+                  </div>
+                </span>
+                <span class="row"><img
+                  class="img-icon"
+                  src="assets/img/software.png"
+                  alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Software</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                  <img
+                  class="img-fluid"
+                  src="assets/img/software_feb_12.PNG"
+                  alt="..."
+                  />
+                  </div>
+                <p>This week we finished the stress recognition aspect of the project. The ESP32 polls the biometric sensors and sends this data via BLE to the mobile app. The app then sends the data to the Flask API which returns the prediction model results. These results are then displayed live on the app.</p>
+                </span>
+                <h4>Next steps</h4>
+                <hr class="hr-visible"/>
+                <p>Here's what we're working on for next week: </p>
+                <ul class="a">
+                  <li>Assemble the PCB once parts arrive</li>
+                  <li>Further integrate electrical components into design, make any necessary design modifications.</li>
+                  <li>Calibrate pulse and skin conductance sensor to get accurate results.</li>
+                  <li>Maximize the rate of data transfer. Start working on code for BLS technique.</li>
+                </ul>
+                <button class="btn-lg next-blog-btn" id="nextWeek">Next week >></button>
+              </div>
             </span>
         </div>
       </section>
