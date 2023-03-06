@@ -89,6 +89,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     feb6BlogModal.style.display = "none";
   };
 
+  mar5BlogBtn.onclick = function () {
+    mar5BlogModal.style.display = "block";
+  };
+
   nextWeekMar5Btn.onclick = function () {
     mar5BlogModal.style.display = "block";
     feb12BlogModal.style.display = "none";
