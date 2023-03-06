@@ -61,9 +61,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">Grounded</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#goal"
-              >The Goal</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#goal">The Goal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#solution"
@@ -91,11 +89,7 @@
             </h1>
             <h3 class="lead mb-5">Short-term stress recognition and relief.</h3>
           </div>
-            <img
-              class="img-prototype"
-              src="assets/img/prototype.png"
-              alt="..."
-          />
+          <img class="img-prototype" src="assets/img/prototype.png" alt="..." />
         </div>
       </section>
       <hr class="m-0" />
@@ -103,21 +97,27 @@
       <section class="main-section" id="goal">
         <div class="main-section-content row row-cols-2">
           <div>
-          <h2 class="mb-3">What's the Problem?</h2>
+            <h2 class="mb-3">What's the Problem?</h2>
             <div class="flex-grow-1">
               <p class="mb-5">
-              33% of people experience brief periods of high stress everyday. At work, school, or at home. 
-              This can manifest as hyperventilating, sweating, negative and racing thoughts, and restlessness. 
-              With long wait times and expensive fees, long-term professional care is inaccessible to many. 
-              In a survey we conducted, 41% of people said they are unaware when they are experiencing a 
-              period of high stress or are about to have an anxiety attack. People also hesitate to reach
-              out for help due to stigma and self-consciousness.
+                33% of people experience brief periods of high stress everyday.
+                At work, school, or at home. This can manifest as
+                hyperventilating, sweating, negative and racing thoughts, and
+                restlessness. With long wait times and expensive fees, long-term
+                professional care is inaccessible to many. In a survey we
+                conducted, 41% of people said they are unaware when they are
+                experiencing a period of high stress or are about to have an
+                anxiety attack. People also hesitate to reach out for help due
+                to stigma and self-consciousness.
               </p>
-              </div>
-              </div>
-              <di class="main-idea-bg">
-                <p class="subheading mb-3" style="text-align:center;">WE WANT TO PROVIDE PEOPLE WITH A WAY TO COMFORTABLY AND DISCRETELY MANAGE THEIR EVERYDAY STRESS WHILE WAITING TO ACCESS PROFESSIONAL CARE.</p>
-              </div>
+            </div>
+          </div>
+          <div class="main-idea-bg">
+            <p class="subheading mb-3" style="text-align: center">
+              WE WANT TO PROVIDE PEOPLE WITH A WAY TO COMFORTABLY AND DISCRETELY
+              MANAGE THEIR EVERYDAY STRESS WHILE WAITING TO ACCESS PROFESSIONAL
+              CARE.
+            </p>
           </div>
         </div>
       </section>
@@ -126,91 +126,131 @@
       <section class="main-section" id="solution">
         <div class="main-section-content">
           <h2 class="mb-3">How do we fix it?</h2>
-            <div class="flex-grow-1">
-              <p class="mb-5">
-                The Grounded device consists of two wearables, made to be discreet and comfortable, that go on your feet. The device measures stress using biometric sensors, then prompts the user to use grounding techniques to help them calm down. It collects information such as heart rate and galvanic skin response and uses an ML model to predict if the user is stressed. Then, the device will notify them to use the app's guided breathing exercises, muscle relaxation techniques, and/or mindfulness activities. By connecting to the Grounded App, the user can monitor their biometric data in real-time and access the guided relaxation techniques.
-              </p>
-            </div>
-            <div class="row row-cols-3">
-              <span>
-            <button class="btn-lg" id="measuringBtn">Measuring Stress</button>
-            <div id="measuringModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3>Measuring Stress</h3>
-                <hr class="hr-visible"/>
-                <div class="col col-3">
-                <div class="row">
-                  <img
-                  class="img-icon"
-                  src="assets/img/heart.png"
-                  alt="..."
-                  />
-                  <div style="vertical-align:middle; flex-shrink:1;">
-                  <p>When a person is stressed, their heart rate increases. We use a pulse sensor to measure the BPM and inter-beat interval.</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <img
-                  class="img-icon"
-                  src="assets/img/skin.png"
-                  alt="..."
-                  />
-                  <div style="vertical-align:middle; flex-shrink: 1;">
-                  <p>A change in emotional state can be measured by the galvanic skin response using an EDA sensor.</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <img
-                  class="img-icon"
-                  src="assets/img/ml.png"
-                  alt="..."
-                  />
-                  <div style="vertical-align:middle; flex-shrink:1;">
-                    <p>A machine learning model predicts whether the user is experiencing high or low stress.</p>          
+          <div class="flex-grow-1">
+            <p class="mb-5">
+              The Grounded device consists of two wearables, made to be discreet
+              and comfortable, that go on your feet. The device measures stress
+              using biometric sensors, then prompts the user to use grounding
+              techniques to help them calm down. It collects information such as
+              heart rate and galvanic skin response and uses an ML model to
+              predict if the user is stressed. Then, the device will notify them
+              to use the app's guided breathing exercises, muscle relaxation
+              techniques, and/or mindfulness activities. By connecting to the
+              Grounded App, the user can monitor their biometric data in
+              real-time and access the guided relaxation techniques.
+            </p>
+          </div>
+          <div class="row row-cols-3">
+            <span>
+              <button class="btn-lg" id="measuringBtn">Measuring Stress</button>
+              <div id="measuringModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Measuring Stress</h3>
+                  <hr class="hr-visible" />
+                  <div class="col col-3">
+                    <div class="row">
+                      <img
+                        class="img-icon"
+                        src="assets/img/heart.png"
+                        alt="..."
+                      />
+                      <div style="vertical-align: middle; flex-shrink: 1">
+                        <p>
+                          When a person is stressed, their heart rate increases.
+                          We use a pulse sensor to measure the BPM and
+                          inter-beat interval.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <img
+                        class="img-icon"
+                        src="assets/img/skin.png"
+                        alt="..."
+                      />
+                      <div style="vertical-align: middle; flex-shrink: 1">
+                        <p>
+                          A change in emotional state can be measured by the
+                          galvanic skin response using an EDA sensor.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <img class="img-icon" src="assets/img/ml.png" alt="..." />
+                      <div style="vertical-align: middle; flex-shrink: 1">
+                        <p>
+                          A machine learning model predicts whether the user is
+                          experiencing high or low stress.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
             </span>
             <span>
-            <button class="btn-lg" id="mitigatingBtn">Mitigating Stress</button>
-            <div id="mitigatingModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3>Mitigating Stress</h3>
-                <hr class="hr-visible"/>
-                <p>We offer users two techniques to help them calm down when experiencing high stress:</p>
-                <h5>1. Breathing visualizer</h5>
-                <p>On the app, you can follow a visualizer that guides your breathing to slow down.</p>
-                <h5>2. Bi-lateral Stimulation</h5>
-                <p>BLS stands for Bi-Lateral Stimulation, which is a technique that uses tapping or vibrations on both sides of the body in a back-and-forth pattern. 
-                  <a href="https://www.evolutionsbh.com/articles/how-bilateral-stimulation-can-help-you-feel-better/">Research</a> has found that this can help lower heart rate in a short amount of time, usually within 30 seconds to two minutes.</p>
+              <button class="btn-lg" id="mitigatingBtn">
+                Mitigating Stress
+              </button>
+              <div id="mitigatingModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Mitigating Stress</h3>
+                  <hr class="hr-visible" />
+                  <p>
+                    We offer users two techniques to help them calm down when
+                    experiencing high stress:
+                  </p>
+                  <h5>1. Breathing visualizer</h5>
+                  <p>
+                    On the app, you can follow a visualizer that guides your
+                    breathing to slow down.
+                  </p>
+                  <h5>2. Bi-lateral Stimulation</h5>
+                  <p>
+                    BLS stands for Bi-Lateral Stimulation, which is a technique
+                    that uses tapping or vibrations on both sides of the body in
+                    a back-and-forth pattern.
+                    <a
+                      href="https://www.evolutionsbh.com/articles/how-bilateral-stimulation-can-help-you-feel-better/"
+                      >Research</a
+                    >
+                    has found that this can help lower heart rate in a short
+                    amount of time, usually within 30 seconds to two minutes.
+                  </p>
+                </div>
               </div>
-            </div>
             </span>
             <span>
-            <button class="btn-lg" id="designingBtn">Designing for comfort</button>
-            <div id="designingModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3>Designing for comfort</h3>
-                <hr class="hr-visible"/>
-                <span class="row row-cols-2">
-                  <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/design.jpg"
-                  alt="..."
-                  />
-                  </div>
-                <p>To develop our device, we started with gathering user feedback to design the most comfortable and discreet wearable. Many users identified that having an unobtrusive solution was a priority. The wearable is a sock that fits comfortably inside your shoe, making it completely invisible.</p>
-                </span>
+              <button class="btn-lg" id="designingBtn">
+                Designing for comfort
+              </button>
+              <div id="designingModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Designing for comfort</h3>
+                  <hr class="hr-visible" />
+                  <span class="row row-cols-2">
+                    <div class="blog-img-container">
+                      <img
+                        class="img-fluid"
+                        src="assets/img/mar_6_mech.jpg"
+                        alt="..."
+                      />
+                    </div>
+                    <p>
+                      To develop our device, we started with gathering user
+                      feedback to design the most comfortable and discreet
+                      wearable. Many users identified that having an unobtrusive
+                      solution was a priority. The wearable is a sock that fits
+                      comfortably inside your shoe, making it completely
+                      invisible.
+                    </p>
+                  </span>
+                </div>
               </div>
-            </div>
             </span>
-            </div>
           </div>
         </div>
       </section>
@@ -219,77 +259,125 @@
       <section class="main-section" id="blog">
         <div class="main-section-content">
           <h2 class="mb-3">Our Progress So Far</h2>
-          <p>Here we'll be giving weekly updates on how the build for our prototype is going. Check back here for updates!</p>
-           <span>
+          <p>
+            Here we'll be giving weekly updates on how the build for our
+            prototype is going. Check back here for updates!
+          </p>
+          <span>
             <button class="btn-lg" id="jan22BlogBtn">Week of Jan 22nd</button>
             <div id="jan22BlogModal" class="modal">
               <div class="modal-content">
                 <span class="close">&times;</span>
                 <h3>Week of Jan 22nd</h3>
                 <h4>What we accomplished</h4>
-                <hr class="hr-visible"/>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/mechanical.png"
-                  alt="..."
+                <hr class="hr-visible" />
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/mechanical.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Mechanical</h4>
                 </span>
                 <span class="row row-cols-2">
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/jan_22_mech.jpeg"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/jan_22_mech.jpeg"
+                      alt="..."
+                    />
                   </div>
-                  <p>For the physical design we are using a polyester-based sock (heat resistant and nonconductive material) as our base of the design and have a cut for the pulse sensor as well as the GSR sensor electrodes. The top strap (containing the electrical components) is removable and attached with Velcro to allow for the rest of the design to be washed. A rough prototype of the design has been made for both feet.</p>
+                  <p>
+                    For the physical design we are using a polyester-based sock
+                    (heat resistant and nonconductive material) as our base of
+                    the design and have a cut for the pulse sensor as well as
+                    the GSR sensor electrodes. The top strap (containing the
+                    electrical components) is removable and attached with Velcro
+                    to allow for the rest of the design to be washed. A rough
+                    prototype of the design has been made for both feet.
+                  </p>
                 </span>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/electrical.png"
-                  alt="..."
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/electrical.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Electrical</h4>
                 </span>
                 <span class="row row-cols-2">
-                  <p>To minimize on space we've designed a PCB for our main circuit. This week we ordered the surface mount electronic components and have started testing the circuit with simple wiring to ensure everything works.</p>
+                  <p>
+                    To minimize on space we've designed a PCB for our main
+                    circuit. This week we ordered the surface mount electronic
+                    components and have started testing the circuit with simple
+                    wiring to ensure everything works.
+                  </p>
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/electrical_jan_22_pic.png"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/electrical_jan_22_pic.png"
+                      alt="..."
+                    />
                   </div>
                 </span>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/software.png"
-                  alt="..."
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/software.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Software</h4>
                 </span>
                 <span class="row row-cols-2">
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/software_jan_22.png"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/software_jan_22.png"
+                      alt="..."
+                    />
                   </div>
-                <p>This week, we focused on connecting the main device via BLE (high-speed bluetooth) technology to the smartphone app. We were successful in polling and sending the sensor data to be displayed and stored on the app. We also built the stress prediction code by deploying and incorporating the previously trained ML model and building the data pipeline taking json file as input. We are now working on setting up the flask API for transmission of sensor data from the app to the stress prediction code. We were successful in sending the prediction results to the API.</p>
+                  <p>
+                    This week, we focused on connecting the main device via BLE
+                    (high-speed bluetooth) technology to the smartphone app. We
+                    were successful in polling and sending the sensor data to be
+                    displayed and stored on the app. We also built the stress
+                    prediction code by deploying and incorporating the
+                    previously trained ML model and building the data pipeline
+                    taking json file as input. We are now working on setting up
+                    the flask API for transmission of sensor data from the app
+                    to the stress prediction code. We were successful in sending
+                    the prediction results to the API.
+                  </p>
                 </span>
                 <h4>Next steps</h4>
-                <hr class="hr-visible"/>
-                <p>Here's what we're working on for next week: </p>
+                <hr class="hr-visible" />
+                <p>Here's what we're working on for next week:</p>
                 <ul class="a">
-                  <li>Finish designing both PCBs and place an order for all remaining components.</li>
-                  <li>Modify the design to accommodate for the GSR sensors and ensure they are a tight fit in the design for sensor accuracy as well as working on finalizing connection of electrical components into the design.</li>
-                  <li>Continue working on the API to import data from the client.</li>
-                  <li>Find an optimal way to store the sensor data on the app and send it to the Flask backend for the prediction model.</li>
-                  <li>Start working on the controller code for the vibration motors.</li>
+                  <li>
+                    Finish designing both PCBs and place an order for all
+                    remaining components.
+                  </li>
+                  <li>
+                    Modify the design to accommodate for the GSR sensors and
+                    ensure they are a tight fit in the design for sensor
+                    accuracy as well as working on finalizing connection of
+                    electrical components into the design.
+                  </li>
+                  <li>
+                    Continue working on the API to import data from the client.
+                  </li>
+                  <li>
+                    Find an optimal way to store the sensor data on the app and
+                    send it to the Flask backend for the prediction model.
+                  </li>
+                  <li>
+                    Start working on the controller code for the vibration
+                    motors.
+                  </li>
                 </ul>
-                <button class="btn-lg next-blog-btn" id="nextWeekFeb6Btn">Next week >></button>
+                <button class="btn-lg next-blog-btn" id="nextWeekFeb6Btn">
+                  Next week >>
+                </button>
               </div>
             </div>
             <button class="btn-lg" id="feb6BlogBtn">Week of Feb 6th</button>
@@ -298,68 +386,100 @@
                 <span class="close">&times;</span>
                 <h3>Week of Feb 6th</h3>
                 <h4>What we accomplished</h4>
-                <hr class="hr-visible"/>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/mechanical.png"
-                  alt="..."
+                <hr class="hr-visible" />
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/mechanical.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Mechanical</h4>
                 </span>
                 <span class="row row-cols-2">
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/feb_6_mech.jpeg"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/feb_6_mech.jpeg"
+                      alt="..."
+                    />
                   </div>
-                  <p>The design was modified to include better fit for the sensors in the design for sensor accuracy. More material was purchased which is needed for this purpose and will be sewed into the design for the next design iteration. </p>
+                  <p>
+                    The design was modified to include better fit for the
+                    sensors in the design for sensor accuracy. More material was
+                    purchased which is needed for this purpose and will be sewed
+                    into the design for the next design iteration.
+                  </p>
                 </span>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/electrical.png"
-                  alt="..."
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/electrical.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Electrical</h4>
                 </span>
                 <span class="row row-cols-2">
-                  <p>The PCB design was completed this week and the order has been sent out. Final components have also been ordered. Once everything arrives, the PCB will be tested and if any corrections are needed they will be made.</p>
+                  <p>
+                    The PCB design was completed this week and the order has
+                    been sent out. Final components have also been ordered. Once
+                    everything arrives, the PCB will be tested and if any
+                    corrections are needed they will be made.
+                  </p>
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/feb_6_electrical.png"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/feb_6_electrical.png"
+                      alt="..."
+                    />
                   </div>
                 </span>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/software.png"
-                  alt="..."
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/software.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Software</h4>
                 </span>
                 <span class="row row-cols-2">
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/software_feb_6.png"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/software_feb_6.png"
+                      alt="..."
+                    />
                   </div>
-                <p>This week we are continuing to develop the app and Flask API. Now the API also provides the averaged BPM, IBI, and EDA values from the data provided. We are also working on a more efficient method for storing the raw sensor data in the app. Next steps are to start calibrating the sensors to be more accurate and setting up the final API calls and call them at regular intervals.</p>
+                  <p>
+                    This week we are continuing to develop the app and Flask
+                    API. Now the API also provides the averaged BPM, IBI, and
+                    EDA values from the data provided. We are also working on a
+                    more efficient method for storing the raw sensor data in the
+                    app. Next steps are to start calibrating the sensors to be
+                    more accurate and setting up the final API calls and call
+                    them at regular intervals.
+                  </p>
                 </span>
                 <h4>Next steps</h4>
-                <hr class="hr-visible"/>
-                <p>Here's what we're working on this week: </p>
+                <hr class="hr-visible" />
+                <p>Here's what we're working on this week:</p>
                 <ul class="a">
                   <li>Order parts, assemble and test the PCB.</li>
-                  <li>More design iterations for the physical design to find an optimal, comfortable fit for all the sensors and components.</li>
-                  <li>Calibrate pulse and skin conductance sensor to get accurate results.</li>
-                  <li>Finish setting up API calls and have the prediction results updated at regular intervals.</li>
+                  <li>
+                    More design iterations for the physical design to find an
+                    optimal, comfortable fit for all the sensors and components.
+                  </li>
+                  <li>
+                    Calibrate pulse and skin conductance sensor to get accurate
+                    results.
+                  </li>
+                  <li>
+                    Finish setting up API calls and have the prediction results
+                    updated at regular intervals.
+                  </li>
                 </ul>
-                <button class="btn-lg next-blog-btn" id="nextWeekFeb12Btn">Next week >></button>
+                <button class="btn-lg next-blog-btn" id="nextWeekFeb12Btn">
+                  Next week >>
+                </button>
               </div>
             </div>
             <button class="btn-lg" id="feb12BlogBtn">Week of Feb 12th</button>
@@ -368,65 +488,205 @@
                 <span class="close">&times;</span>
                 <h3>Week of Feb 12th</h3>
                 <h4>What we accomplished last week</h4>
-                <hr class="hr-visible"/>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/mechanical.png"
-                  alt="..."
+                <hr class="hr-visible" />
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/mechanical.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Mechanical</h4>
                 </span>
                 <span class="row row-cols-2">
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/feb_12_mech.png"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/feb_12_mech.png"
+                      alt="..."
+                    />
                   </div>
-                  <p>Black elastic and Velcro was added as needed to the design to allow for secure fit of the sensors and accommodation to any foot size. Velcro was added to the electronics strap to allow for electrical component attachment to physical design. The CAD was also modified to reflect the design changes.</p>
+                  <p>
+                    Black elastic and Velcro was added as needed to the design
+                    to allow for secure fit of the sensors and accommodation to
+                    any foot size. Velcro was added to the electronics strap to
+                    allow for electrical component attachment to physical
+                    design. The CAD was also modified to reflect the design
+                    changes.
+                  </p>
                 </span>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/electrical.png"
-                  alt="..."
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/electrical.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Electrical</h4>
                 </span>
                 <span class="row row-cols-2">
-                  <p>Ordered and waiting for parts to arrive. Assisting with sensor calibration and mechanical design in the meantime.</p>
-                  <div class="blog-img-container">
-                  </div>
+                  <p>
+                    Ordered and waiting for parts to arrive. Assisting with
+                    sensor calibration and mechanical design in the meantime.
+                  </p>
+                  <div class="blog-img-container"></div>
                 </span>
-                <span class="row"><img
-                  class="img-icon"
-                  src="assets/img/software.png"
-                  alt="..."
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/software.png"
+                    alt="..."
                   />
                   <h4 class="text-decoration-underline">Software</h4>
                 </span>
                 <span class="row row-cols-2">
                   <div class="blog-img-container">
-                  <img
-                  class="img-fluid"
-                  src="assets/img/software_feb_12.PNG"
-                  alt="..."
-                  />
+                    <img
+                      class="img-fluid"
+                      src="assets/img/software_feb_12.PNG"
+                      alt="..."
+                    />
                   </div>
-                <p>This week we finished the stress recognition aspect of the project. The ESP32 polls the biometric sensors and sends this data via BLE to the mobile app. The app then sends the data to the Flask API which returns the prediction model results. These results are then displayed live on the app.</p>
+                  <p>
+                    This week we finished the stress recognition aspect of the
+                    project. The ESP32 polls the biometric sensors and sends
+                    this data via BLE to the mobile app. The app then sends the
+                    data to the Flask API which returns the prediction model
+                    results. These results are then displayed live on the app.
+                  </p>
                 </span>
                 <h4>Next steps</h4>
-                <hr class="hr-visible"/>
-                <p>Here's what we're working on for next week: </p>
+                <hr class="hr-visible" />
+                <p>Here's what we're working on for next week:</p>
                 <ul class="a">
                   <li>Assemble the PCB once parts arrive</li>
-                  <li>Further integrate electrical components into design, make any necessary design modifications.</li>
-                  <li>Calibrate pulse and skin conductance sensor to get accurate results.</li>
-                  <li>Maximize the rate of data transfer. Start working on code for BLS technique.</li>
+                  <li>
+                    Further integrate electrical components into design, make
+                    any necessary design modifications.
+                  </li>
+                  <li>
+                    Calibrate pulse and skin conductance sensor to get accurate
+                    results.
+                  </li>
+                  <li>
+                    Maximize the rate of data transfer. Start working on code
+                    for BLS technique.
+                  </li>
                 </ul>
-                <button class="btn-lg next-blog-btn" id="nextWeek">Next week >></button>
+                <button class="btn-lg next-blog-btn" id="nextWeekMar5Btn">
+                  Next week >>
+                </button>
               </div>
-            </span>
+            </div>
+            <button class="btn-lg" id="mar5BlogBtn">Week of Mar 5th</button>
+            <div id="mar5BlogModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Week of Mar 5th</h3>
+                <h4>What we accomplished last week</h4>
+                <hr class="hr-visible" />
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/mechanical.png"
+                    alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Mechanical</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                    <img
+                      class="img-fluid"
+                      src="assets/img/mar_6_mech.jpg"
+                      alt="..."
+                    />
+                  </div>
+                  <p>
+                    The design was modified for more comfort and a minimal feel
+                    and reassembled. The design was reversed so that the sensors
+                    sit inside the design in the same location as before and for
+                    comfort the circuit board position is moved near the battery
+                    which would be removable using Velcro. Everything sits
+                    inside the design, all electrical components were sewed and
+                    fixed into our design so outside, our solution is completely
+                    discreet.
+                  </p>
+                </span>
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/electrical.png"
+                    alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Electrical</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                    <img
+                      class="img-fluid"
+                      src="assets/img/mar_6_electrical.jpeg"
+                      alt="..."
+                    />
+                  </div>
+                  <p>
+                    Assembled the PCB and tested the full circuit. Lots of
+                    troubleshooting to get the usb bridge working so we can
+                    upload code to the esp32 module. Continuing to troubleshoot
+                    issues with incorrect sensor values.
+                  </p>
+                </span>
+                <span class="row">
+                  <img
+                    class="img-icon"
+                    src="assets/img/software.png"
+                    alt="..."
+                  />
+                  <h4 class="text-decoration-underline">Software</h4>
+                </span>
+                <span class="row row-cols-2">
+                  <div class="blog-img-container">
+                    <img
+                      class="img-fluid"
+                      src="assets/img/mar_6_software.PNG"
+                      alt="..."
+                    />
+                  </div>
+                  <p>
+                    Implemented the BLS code which turns on the vibration
+                    actuators on the two wearables in an alternating fashion.
+                    Finished the main functionality for the app so it polls the
+                    sensors, sends data to the API and returns/displays the
+                    predicted stress level. The app also now prompts the user to
+                    choose a grounding technique if they are stressed and the
+                    user can manually start the BLS system. More data was
+                    collected and the model was re-trained, also the data
+                    processing was moved to happen on the API side so that only
+                    the analog values need to be polled from the sensors.
+                  </p>
+                </span>
+                <h4>Next steps</h4>
+                <hr class="hr-visible" />
+                <p>Here's what we're working on for next week:</p>
+                <ul class="a">
+                  <li>
+                    Re-design and order new PCB to solve sensor reading issues.
+                  </li>
+                  <li>
+                    Modify physical design for presentability and comfort.
+                  </li>
+                  <li>
+                    Clean up the UI to be more presentable and have a better UX
+                    flow.
+                  </li>
+                  <li>
+                    Implement filters/find a way to decrease the noise on the
+                    data due to the BLE. Re-train models
+                  </li>
+                </ul>
+                <button class="btn-lg next-blog-btn" id="nextWeek">
+                  Next week >>
+                </button>
+              </div>
+            </div>
+          </span>
         </div>
       </section>
       <hr class="m-0" />
@@ -434,12 +694,11 @@
       <section class="main-section" id="team">
         <div class="main-section-content">
           <h2 class="mb-3">Meet the Team!</h2>
-          <div class="subheading mb-2" style="vertical-align:middle;">We are a team of Mechatronics Engineering students, feel free to <a href="mailto:a9pathak@uwaterloo.ca">reach out!</a></div>
-          <img
-              class="img-gen"
-              src="assets/img/team_photo.jpg"
-              alt="..."
-          />
+          <div class="subheading mb-2" style="vertical-align: middle">
+            We are a team of Mechatronics Engineering students, feel free to
+            <a href="mailto:a9pathak@uwaterloo.ca">reach out!</a>
+          </div>
+          <img class="img-gen" src="assets/img/team_photo.jpg" alt="..." />
         </div>
       </section>
       <hr class="m-0" />
