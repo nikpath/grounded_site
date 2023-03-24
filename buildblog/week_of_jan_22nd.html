@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Build Blog - Jan 22nd</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1>Week of Jan 22nd</h1>
+        <p>Build Start!</p>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Content -->
+        <section id="content" class="main">
+          <div class="row">
+            <span class="icon solid style1 fa-cogs"></span>
+            <h2>Mechanical</h2>
+          </div>
+          <div class="spotlight">
+            <p>
+              For the physical design we are using a polyester-based sock (heat
+              resistant and nonconductive material) as our base of the design
+              and have a cut for the pulse sensor as well as the GSR sensor
+              electrodes. The top strap (containing the electrical components)
+              is removable and attached with Velcro to allow for the rest of the
+              design to be washed. A rough prototype of the design has been made
+              for both feet.
+            </p>
+            <span class="image"
+              ><img src="../images/jan_22_mech.jpeg" alt=""
+            /></span>
+          </div>
+        </section>
+
+        <section id="content" class="main">
+          <div class="row">
+            <span class="icon solid style1 fa-microchip"></span>
+            <h2>Electrical</h2>
+          </div>
+          <div class="spotlight">
+            <p>
+              To minimize on space we've designed a PCB for our main circuit.
+              This week we ordered the surface mount electronic components and
+              have started testing the circuit with simple wiring to ensure
+              everything works.
+            </p>
+            <span class="image"
+              ><img src="../images/electrical_jan_22_pic.png" alt=""
+            /></span>
+          </div>
+        </section>
+
+        <section id="content" class="main">
+          <div class="row">
+            <span class="icon solid style1 fa-code"></span>
+            <h2>Software</h2>
+          </div>
+          <div class="spotlight">
+            <p>
+              This week, we focused on connecting the main device via BLE
+              (high-speed bluetooth) technology to the smartphone app. We were
+              successful in polling and sending the sensor data to be displayed
+              and stored on the app. We also built the stress prediction code by
+              deploying and incorporating the previously trained ML model and
+              building the data pipeline taking json file as input. We are now
+              working on setting up the flask API for transmission of sensor
+              data from the app to the stress prediction code. We were
+              successful in sending the prediction results to the API.
+            </p>
+            <span class="image"
+              ><img src="../images/software_jan_22.png" alt=""
+            /></span>
+          </div>
+        </section>
+
+        <section id="content" class="main">
+          <h2>Here's what we're working on this week:</h2>
+          <ul>
+            <li>
+              Finish designing both PCBs and place an order for all remaining
+              components.
+            </li>
+            <li>
+              Modify the design to accommodate for the GSR sensors and ensure
+              they are a tight fit in the design for sensor accuracy as well as
+              working on finalizing connection of electrical components into the
+              design.
+            </li>
+            <li>Continue working on the API to import data from the client.</li>
+            <li>
+              Find an optimal way to store the sensor data on the app and send
+              it to the Flask backend for the prediction model.
+            </li>
+            <li>
+              Start working on the controller code for the vibration motors.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <h2>Grounded</h2>
+          <p>
+            Grounded is a prototype project created for our Mechatronics Fourth
+            Year Design Project. You can check us out at the 2023 Mechatronics
+            Symposium.
+          </p>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://github.com/nikpath/Grounded_wearable"
+                class="icon brands fa-github alt"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/nikpath/Grounded"
+                class="icon brands fa-github alt"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

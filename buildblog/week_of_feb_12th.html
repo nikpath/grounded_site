@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Build Blog - Jan 22nd</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="../assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1>Week of Feb 12th</h1>
+        <p>Slow and steady</p>
+      </header>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Content -->
+        <section id="content" class="main">
+          <div class="row">
+            <span class="icon solid style1 fa-cogs"></span>
+            <h2>Mechanical</h2>
+          </div>
+          <div class="spotlight">
+            <p>
+              Black elastic and Velcro was added as needed to the design to
+              allow for secure fit of the sensors and accommodation to any foot
+              size. Velcro was added to the electronics strap to allow for
+              electrical component attachment to physical design. The CAD was
+              also modified to reflect the design changes.
+            </p>
+            <span class="image"
+              ><img src="../images/feb_12_mech.png" alt=""
+            /></span>
+          </div>
+        </section>
+
+        <section id="content" class="main">
+          <div class="row">
+            <span class="icon solid style1 fa-microchip"></span>
+            <h2>Electrical</h2>
+          </div>
+          <div class="spotlight">
+            <p>
+              Ordered and waiting for parts to arrive. Assisting with sensor
+              calibration and mechanical design in the meantime.
+            </p>
+          </div>
+        </section>
+
+        <section id="content" class="main">
+          <div class="row">
+            <span class="icon solid style1 fa-code"></span>
+            <h2>Software</h2>
+          </div>
+          <div class="spotlight">
+            <p>
+              This week we finished the stress recognition aspect of the
+              project. The ESP32 polls the biometric sensors and sends this data
+              via BLE to the mobile app. The app then sends the data to the
+              Flask API which returns the prediction model results. These
+              results are then displayed live on the app.
+            </p>
+            <span class="image"
+              ><img src="../images/feb_12_software.PNG" alt=""
+            /></span>
+          </div>
+        </section>
+
+        <section id="content" class="main">
+          <h2>Here's what we're working on this week:</h2>
+          <ul>
+            <li>Assemble the PCB once parts arrive</li>
+            <li>
+              Further integrate electrical components into design, make any
+              necessary design modifications.
+            </li>
+            <li>
+              Calibrate pulse and skin conductance sensor to get accurate
+              results.
+            </li>
+            <li>
+              Maximize the rate of data transfer. Start working on code for BLS
+              technique.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <h2>Grounded</h2>
+          <p>
+            Grounded is a prototype project created for our Mechatronics Fourth
+            Year Design Project. You can check us out at the 2023 Mechatronics
+            Symposium.
+          </p>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://github.com/nikpath/Grounded_wearable"
+                class="icon brands fa-github alt"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/nikpath/Grounded"
+                class="icon brands fa-github alt"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+        </section>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/jquery.scrolly.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
